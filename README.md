@@ -51,3 +51,8 @@ Gambar tersebut menunjukkan alur publish-subscribe antara dua program Rust (publ
      Processed in 36.387µs
      ```
    * Karena delay 1 detik (`thread::sleep`) dikomentari, waktu proses yang tercatat hanya puluhan mikro-detik.
+
+### 3. Perubahan RabbitMQ
+![Gambar 3](Gambar/Gambar_3.png)
+
+Spike ini terjadi karena cargo run menjalankan publisher yang mem-publish 5 pesan berturut-turut. Management UI mencatat laju publish dan deliver dalam pesan per detik, sehingga Anda dapat melihat lonjakan singkat (spikes) pada momen tersebut.
