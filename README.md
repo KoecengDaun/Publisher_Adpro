@@ -26,3 +26,8 @@ amqp://<username>:<password>@<host>:<port>
 * **`guest:guest`** → username = `guest`, password = `guest` (default RabbitMQ)
 * **`localhost`** → broker berjalan di mesin yang sama (loopback)
 * **`5672`** → port standar AMQP
+
+## Gambar
+
+### 1. Membuka Rabbit MQ
+![Gambar1](publisher\Gambar\Gambar_1.png)
